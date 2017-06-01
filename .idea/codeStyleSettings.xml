@@ -22,7 +22,6 @@
         <option name="HTML_SPACE_INSIDE_EMPTY_TAG" value="true" />
         <option name="HTML_INLINE_ELEMENTS" value="abbr,acronym,b,basefont,bdo,big,br,cite,cite,code,dfn,em,font,i,img,input,kbd,label,q,s,samp,select,span,strike,strong,sub,sup,textarea,tt,u,var" />
         <JSCodeStyleSettings>
-          <option name="USE_SEMICOLON_AFTER_STATEMENT" value="false" />
           <option name="FORCE_SEMICOLON_STYLE" value="true" />
           <option name="USE_DOUBLE_QUOTES" value="false" />
           <option name="FORCE_QUOTE_STYlE" value="true" />

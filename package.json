@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "webpack -w & nodemon --watch server -e js,html babelify.js",
-    "postinstall": "node ./post-install.js"
+    "postinstall": "node ./post-install.js",
+    "test": "jest"
   },
   "engines": {
     "node": ">=7.0.0"
@@ -36,6 +37,8 @@
     "event-stream": "^3.3.4",
     "express": "^4.14.0",
     "express-session": "^1.14.2",
+    "faker": "^4.1.0",
+    "fixed-data-table-2": "^0.7.17",
     "glob": "^7.1.1",
     "immutable": "^3.8.1",
     "jquery": "^3.1.1",
@@ -47,6 +50,7 @@
     "passport-local": "^1.0.0",
     "pg": "^6.1.0",
     "pg-native": "^1.10.0",
+    "prop-types": "^15.5.10",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-redux": "^4.4.6",
@@ -68,14 +72,14 @@
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.3"
+    "eslint-plugin-react": "^6.10.3",
+    "jest": "^20.0.4"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/leafoflegend/MemeMagic.git"
   },
   "keywords": [
-    "AFrame",
     "React",
     "Redux",
     "Postgres",

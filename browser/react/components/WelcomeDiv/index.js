@@ -1,22 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './styles';
 import WelcomeText from '../WelcomeText';
+import TheTable from '../TheTable';
 
-export default class WelcomeDiv extends Component {
-  render () {
-    const { welcomeText, handleSubmit, isInitialized } = this.props;
-
-    return (
-      <div style={styles.container}>
-        <WelcomeText
-          handleSubmit={handleSubmit}
-          welcomeText={welcomeText}
-          isInitialized={isInitialized}
-        />
-      </div>
-    );
-  }
-}
+const WelcomeDiv = ({
+  welcomeText,
+  handleSubmit,
+  isInitialized
+}) => (
+  <div style={styles.container}>
+    <WelcomeText
+      handleSubmit={handleSubmit}
+      welcomeText={welcomeText}
+      isInitialized={isInitialized}
+    />
+    <TheTable />
+  </div>
+);
 
 WelcomeDiv.defaultProps = {
   handleSubmit: () => {
@@ -25,7 +26,9 @@ WelcomeDiv.defaultProps = {
 };
 
 WelcomeDiv.propTypes = {
-  welcomeText: React.PropTypes.string,
-  handleSubmit: React.PropTypes.func,
-  isInitialized: React.PropTypes.bool,
+  welcomeText: PropTypes.string,
+  handleSubmit: PropTypes.func,
+  isInitialized: PropTypes.bool
 };
+
+export default WelcomeDiv;

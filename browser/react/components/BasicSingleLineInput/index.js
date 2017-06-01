@@ -1,20 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import TextField from 'material-ui/TextField';
+import PropTypes from 'prop-types';
 import styles from './styles';
 
-export default class BasicSingleLineInput extends Component {
-  render () {
-    const { handleSubmit } = this.props;
-
-    return (
-      <div style={styles.container}>
-        <form type='submit' onSubmit={handleSubmit}>
-          <TextField hintText={'Would you like a different welcome text?'} underlineShow={false} name={'textField'} autoComplete={'off'} />
-        </form>
-      </div>
-    );
-  }
-}
+const BasicSingleLineInput = ({
+  handleSubmit
+}) => (
+  <div style={styles.container}>
+    <form type='submit' onSubmit={handleSubmit}>
+      <TextField hintText={'Would you like a different welcome text?'} underlineShow={false} name={'textField'} autoComplete={'off'} />
+    </form>
+  </div>
+);
 
 BasicSingleLineInput.defaultProps = {
   handleSubmit: () => {
@@ -23,5 +20,7 @@ BasicSingleLineInput.defaultProps = {
 };
 
 BasicSingleLineInput.propTypes = {
-  handleSubmit: React.PropTypes.func
+  handleSubmit: PropTypes.func
 };
+
+export default BasicSingleLineInput;
