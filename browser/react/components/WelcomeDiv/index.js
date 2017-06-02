@@ -6,8 +6,11 @@ import TheTable from '../TheTable';
 
 const WelcomeDiv = ({
   welcomeText,
+  isInitialized,
+  dataList,
   handleSubmit,
-  isInitialized
+  checkABox,
+  updateCount
 }) => (
   <div style={styles.container}>
     <WelcomeText
@@ -15,7 +18,12 @@ const WelcomeDiv = ({
       welcomeText={welcomeText}
       isInitialized={isInitialized}
     />
-    <TheTable />
+    <div style={{height: '1em'}} />
+    <TheTable
+      dataList={dataList}
+      checkABox={checkABox}
+      updateCount={updateCount}
+    />
   </div>
 );
 
@@ -28,7 +36,10 @@ WelcomeDiv.defaultProps = {
 WelcomeDiv.propTypes = {
   welcomeText: PropTypes.string,
   handleSubmit: PropTypes.func,
-  isInitialized: PropTypes.bool
+  isInitialized: PropTypes.bool,
+  dataList: PropTypes.object,
+  checkABox: PropTypes.func,
+  updateCount: PropTypes.number
 };
 
 export default WelcomeDiv;

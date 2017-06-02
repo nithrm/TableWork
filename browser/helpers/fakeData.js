@@ -1,4 +1,5 @@
 import faker from 'faker';
+import R from 'ramda';
 
 class FakeData {
   constructor (size) {
@@ -22,6 +23,8 @@ class FakeData {
       companyName: faker.company.companyName(),
       words: faker.lorem.words(),
       sentence: faker.lorem.sentence(),
+      checked: false,
+      budget: faker.random.number({min: 0, max: 100})
     };
   }
 
@@ -35,9 +38,23 @@ class FakeData {
     return this._cache[index];
   }
 
+  setObjectAt (index, key, value) {
+    if (index < 0 || index > this.size){
+      return undefined;
+    }
+    if (this._cache[index] === undefined) {
+      this._cache[index] = this.createFakeRowObjectData(index);
+    }
+    if(this._cache[index][key] === true || this._cache[index][key] === false) {
+      this._cache[index][key] = !this._cache[index][key];
+    } else this._cache[index][key] = value;
+    console.log('currentRowCheckedValue: ', this._cache[index][key]);
+    return this;
+  }
+
   getAll () {
     if (this._cache.length < this.size) {
-      for (var i = 0; i < this.size; i++) {
+      for (let i = 0; i < this.size; i++) {
         this.getObjectAt(i);
       }
     }

@@ -1,11 +1,13 @@
 import {
   CHANGE_WELCOME,
-  SET_INITIALIZED
+  SET_INITIALIZED,
+  SET_CHECKED
 } from '../constants';
 import axios from 'axios';
 
 const createWelcomeText = (text) => ({ type: CHANGE_WELCOME, welcomeText: text });
 const createInitialized = () => ({ type: SET_INITIALIZED });
+export const createCheckedBox = (rowIndex) => ({ type: SET_CHECKED, rowIndex: rowIndex });
 
 // Used by the front end to live change the welcomeText.
 export const changeWelcomeText = text => dispatch => {
