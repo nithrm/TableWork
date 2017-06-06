@@ -1,6 +1,8 @@
 {
 	"extends": "airbnb",
 	"rules": {
-		"semi": "always"
+		"semi": 0,
+		"linebreak-style": "off",
+		"comma-dangle": 0
 	}
 }

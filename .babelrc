@@ -1,4 +1,11 @@
 {
-  "presets": ["es2015"],
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": ["last 3 versions", "ie >= 10"]
+      },
+      "uglify": true
+    }]
+  ],
   "plugins": ["transform-object-rest-spread"]
 }
