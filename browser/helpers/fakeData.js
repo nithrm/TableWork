@@ -8,6 +8,9 @@ class FakeData {
   }
 
   createFakeRowObjectData (index) {
+    const budgetMin = faker.random.number({min: 0, max: 15000});
+    const budgetMax = budgetMin + faker.random.number({min: 0, max: 15000});
+
     return {
       id: index,
       avatar: faker.image.avatar(),
@@ -24,8 +27,10 @@ class FakeData {
       words: faker.lorem.words(),
       sentence: faker.lorem.sentence(),
       checked: false,
-      budget: faker.random.number({min: 0, max: 100})
-    };
+      budgetMin: budgetMin,
+      budgetMax: budgetMax,
+      budget: (budgetMin / budgetMax) * 100
+    }
   }
 
   getObjectAt (index) {

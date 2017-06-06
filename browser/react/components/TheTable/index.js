@@ -9,6 +9,7 @@ import {
 } from 'fixed-data-table-2';
 import { Line } from 'rc-progress';
 import Checkbox from 'material-ui/Checkbox';
+import moment from 'moment';
 import styles from './styles';
 
 class TheTable extends Component {
@@ -27,7 +28,7 @@ class TheTable extends Component {
       <Table
         rowsCount={dataList.getSize()}
         rowHeight={50}
-        headerHeight={50}
+        headerHeight={35}
         width={1000}
         height={500}
         style={{ borderCollpase: 'collapse' }}
@@ -188,15 +189,43 @@ class TheTable extends Component {
                   fontSize: '0.5em'
                 }}>
                   <div style={{ width: '50px', textAlign: 'center' }}>
-                    <span>$1345</span>
+                    <span>{'$' + dataList.getObjectAt(rowIndex).budgetMin}</span>
                   </div>
-                  <span>$3655 Remaining</span>
+                  <span>{'$' + (dataList.getObjectAt(rowIndex).budgetMax - dataList.getObjectAt(rowIndex).budgetMin)}</span>
                   <div style={{ width: '50px', textAlign: 'center' }}>
-                    <span>$5000</span>
+                    <span>{'$' + dataList.getObjectAt(rowIndex).budgetMax}</span>
                   </div>
                 </div>
               </Cell>
             )
+          }}
+        />
+        <Column
+          width={110}
+          header={
+            <Cell
+              style={{
+                textAlign: 'center',
+                backgroundColor: '#646b6f',
+                color: 'white',
+                fontSize: '1em',
+                fontWeight: 'normal'
+              }}
+            >
+              Date
+            </Cell>
+          }
+          cell={({ rowIndex }) => {
+            return (
+              <Cell
+                style={{
+                  lineHeight: '50px',
+                  marginTop: '-8px'
+                }}
+              >
+                {moment(dataList.getObjectAt(rowIndex).date).format('MMM Do YYYY')}
+              </Cell>
+            );
           }}
         />
       </Table>

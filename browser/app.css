@@ -368,6 +368,11 @@ body[dir="rtl"] .fixedDataTableColumnResizerLineLayout_main {
 .public_fixedDataTable_header,
 .public_fixedDataTable_hasBottomBorder {
     border-color: #d3d3d3;
+    text-align: center;
+    background-color: #646b6f;
+    color: white;
+    font-size: 1em;
+    font-weight: normal;
 }
 
 .public_fixedDataTable_header .public_fixedDataTableCell_main {
