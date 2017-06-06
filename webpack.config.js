@@ -4,16 +4,37 @@ const webpack = require('webpack');
 
 module.exports = (env = {}) => {
   const isProduction = env.production === true;
-  let myPlugins = [];
+  const myPlugins = [
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      filename: './public/vendor.bundle.js',
+      minChunks: Infinity
+    })
+  ];
 
   if (isProduction) {
-    myPlugins = [
-      new webpack.optimize.UglifyJsPlugin({ comments: true, sourceMap: true })
-    ];
+    myPlugins.push(
+      new webpack.optimize.UglifyJsPlugin({
+        comments: true,
+        sourceMap: true,
+        warnings: false,
+        drop_console: true,
+        minimize: true,
+        exclude: [
+          'vendor.bundle.js'
+        ]
+      })
+    );
   };
 
   return {
-    entry: './browser/react/index.js',
+    entry: {
+      app: './browser/react/index.js',
+      vendor: [
+        'react',
+        'react-dom'
+      ]
+    },
     output: {
       path: __dirname,
       filename: './public/bundle.js'
@@ -33,10 +54,6 @@ module.exports = (env = {}) => {
         }
       ]
     },
-    plugins: myPlugins,
-    externals: {
-      'react': 'react',
-      'react-dom': 'reactDOM'
-    }
-  }
+    plugins: myPlugins
+  };
 };
