@@ -4,7 +4,11 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 import { Provider } from 'react-redux';
 import store from '../redux/store';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import { Router, Route, browserHistory } from 'react-router';
+import {
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom';
+import createHistory from 'history/createBrowserHistory';
 import { AppContainer } from './containers';
 
 import SOCKET from '../sockets';
@@ -17,10 +21,15 @@ injectTapEventPlugin();
   Mui = materialize-ui providing a default theme for itself.
   Router = react-router
 */
+const history = createHistory({
+  basename: '/',
+  forceRefresh: true
+});
+
 ReactDOM.render(
   <Provider store={store}>
     <MuiThemeProvider>
-      <Router history={browserHistory}>
+      <Router history={history}>
         <Route path='/' component={AppContainer} />
       </Router>
     </MuiThemeProvider>

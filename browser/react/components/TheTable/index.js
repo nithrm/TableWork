@@ -220,10 +220,11 @@ class TheTable extends Component {
               <Cell
                 style={{
                   lineHeight: '50px',
-                  marginTop: '-8px'
+                  marginTop: '-8px',
+                  textAlign: 'center'
                 }}
               >
-                {moment(dataList.getObjectAt(rowIndex).date).format('MMM Do YYYY')}
+                {moment(dataList.getObjectAt(rowIndex).date).format('MMM Do')}
               </Cell>
             );
           }}
