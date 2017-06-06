@@ -1,0 +1,8 @@
+{
+  "events": {
+    "start": "osascript -e 'display notification \"Meme Magic Started on Port 3001\" with title \"MemeMagic\"'",
+    "restart": "osascript -e 'display notification \"Meme Magic Re-Started on Port 3001\" with title \"MemeMagic\"'",
+    "crash": "osascript -e 'display notification \"Meme Magic Has CRASHED.\" with title \"MemeMagic\"'",
+    "exit": "osascript -e 'display notification \"Exited Meme Magic\" with title \"MemeMagic\"'"
+  }
+}

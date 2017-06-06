@@ -12,12 +12,12 @@ const _Port = 3001;
 import ioInit from './server/sockets';
 
 import { getYesNo } from 'cli-interact';
-const syncTruth = getYesNo(chalk.cyan('Rick, do you wanna get savage on this database? (Force Sync)'));
+// const syncTruth = getYesNo(chalk.cyan('Rick, do you wanna get savage on this database? (Force Sync)'));
 
 // If you want to remove the syncTruth, change syncTruth to true or false manually.
 
 // The order of initializing the backend.
-startDB(syncTruth)
+startDB(false)
   .then(() => server.on('request', myServer))
   .then(() => ioInit(server))
   .catch(err => console.error(err))
