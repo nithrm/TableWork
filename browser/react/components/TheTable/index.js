@@ -35,6 +35,7 @@ class TheTable extends Component {
       >
         <Column
           width={42}
+          fixed={true}
           header={
             <Cell
               style={{
@@ -64,6 +65,7 @@ class TheTable extends Component {
         />
         <Column
           width={250}
+          fixed={true}
           header={
             <Cell
               style={{
@@ -225,6 +227,35 @@ class TheTable extends Component {
                 }}
               >
                 {moment(dataList.getObjectAt(rowIndex).date).format('MMM Do')}
+              </Cell>
+            );
+          }}
+        />
+        <Column
+          width={200}
+          header={
+            <Cell
+              style={{
+                textAlign: 'center',
+                backgroundColor: '#646b6f',
+                color: 'white',
+                fontSize: '1em',
+                fontWeight: 'normal'
+              }}
+            >
+              Project
+            </Cell>
+          }
+          cell={({ rowIndex }) => {
+            return (
+              <Cell
+                style={{
+                  lineHeight: '50px',
+                  marginTop: '-8px',
+                  textAlign: 'center'
+                }}
+              >
+                {dataList.getObjectAt(rowIndex).project}
               </Cell>
             );
           }}

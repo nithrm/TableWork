@@ -29,7 +29,8 @@ class FakeData {
       checked: false,
       budgetMin: budgetMin,
       budgetMax: budgetMax,
-      budget: (budgetMin / budgetMax) * 100
+      budget: (budgetMin / budgetMax) * 100,
+      project: `${faker.commerce.productAdjective()} ${faker.commerce.product()}`
     }
   }
 
