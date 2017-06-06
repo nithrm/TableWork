@@ -52,7 +52,7 @@
  */
 
 .fixedDataTableCellLayout_main {
-    border-right-style: solid;
+    border-right-style: hidden;
     border-right-width: 1px;
     border-width: 0 1px 0 0;
     box-sizing: border-box;
@@ -127,7 +127,7 @@
 }
 
 .fixedDataTableColumnResizerLineLayout_main {
-    border-right-style: solid;
+    border-right-style: hidden;
     border-right-width: 1px;
     box-sizing: border-box;
     position: absolute;
@@ -157,7 +157,7 @@ body[dir="rtl"] .fixedDataTableColumnResizerLineLayout_main {
  */
 
 .fixedDataTableLayout_main {
-    border-style: solid;
+    border-style: hidden;
     border-width: 1px;
     box-sizing: border-box;
     overflow: hidden;
@@ -166,12 +166,12 @@ body[dir="rtl"] .fixedDataTableColumnResizerLineLayout_main {
 
 .fixedDataTableLayout_header,
 .fixedDataTableLayout_hasBottomBorder {
-    border-bottom-style: solid;
+    border-bottom-style: hidden;
     border-bottom-width: 1px;
 }
 
 .fixedDataTableLayout_footer .public_fixedDataTableCell_main {
-    border-top-style: solid;
+    border-top-style: hidden;
     border-top-width: 1px;
 }
 
@@ -224,7 +224,7 @@ body[dir="rtl"] .fixedDataTableColumnResizerLineLayout_main {
 .fixedDataTableRowLayout_fixedColumnsDivider {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border-left-style: solid;
+    border-left-style: hidden;
     border-left-width: 1px;
     left: 0;
     position: absolute;

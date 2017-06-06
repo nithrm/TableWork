@@ -45,10 +45,9 @@ class FakeData {
     if (this._cache[index] === undefined) {
       this._cache[index] = this.createFakeRowObjectData(index);
     }
-    if(this._cache[index][key] === true || this._cache[index][key] === false) {
+    if (this._cache[index][key] === true || this._cache[index][key] === false) {
       this._cache[index][key] = !this._cache[index][key];
     } else this._cache[index][key] = value;
-    console.log('currentRowCheckedValue: ', this._cache[index][key]);
     return this;
   }
 
