@@ -6,7 +6,7 @@ import Sequelize from 'sequelize';
 
 const memeDB = process.env.MAIN_DB_URL;
 
-console.log(chalk.yellow('Hey Rick!'));
+console.log(chalk.red('Hey Rick!'));
 
 const _db = new Sequelize(memeDB);
 
