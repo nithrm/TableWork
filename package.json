@@ -67,6 +67,7 @@
     "express-session": "^1.15.3",
     "express-static-gzip": "^0.2.2",
     "jest": "^20.0.4",
+    "libpq": "^1.8.7",
     "nodemon": "^1.11.0",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
