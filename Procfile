@@ -1,0 +1,1 @@
+Web: yarn heroku-deploy
