@@ -21,7 +21,7 @@ module.exports = (env = {}) => {
         drop_console: true,
         minimize: true,
         exclude: [
-          'vendor.bundle.js'
+          './public/vendor.bundle.js'
         ]
       })
     );
