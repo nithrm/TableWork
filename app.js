@@ -7,7 +7,7 @@ import startDB from './server/db';
 import chalk from 'chalk';
 
 const server = HTTP.createServer();
-const _Port = 3001;
+const _Port = $PORT || 3001;
 
 import ioInit from './server/sockets';
 
