@@ -29,7 +29,8 @@ module.exports = (env = {}) => {
         algorithm: 'gzip',
         test: /\.js$|\.css$|\.html$/,
         threshold: 0,
-        minRatio: 0
+        minRatio: 0,
+        deleteOriginalAssets: true
       })
     );
   };
