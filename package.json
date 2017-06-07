@@ -6,6 +6,8 @@
   "scripts": {
     "start": "rm -rf public/ && webpack -w --env.production=false --define process.env.NODE_ENV='\"development\"' & NODE_ENV='development' nodemon --watch server -e js babelify.js",
     "start:prod": "rm -rf public/ && webpack --env.production --define process.env.NODE_ENV='\"production\"' --progress --colors && NODE_ENV='production' nodemon --watch server -e js babelify.js",
+    "heroku-deploy": "yarn && NODE_ENV='production' nodemon server -e js babelify.js",
+    "heroku-postbuild": "rm -rf public/ && webpack --env.production --define process.env.NODE_ENV='\"production\"' --progress --colors",
     "postinstall": "node ./post-install.js",
     "test": "jest"
   },
