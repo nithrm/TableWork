@@ -2,6 +2,7 @@ import path from 'path';
 import express from 'express';
 import favicon from 'serve-favicon';
 import expressStaticGzip from 'express-static-gzip';
+import chalk from 'chalk';
 
 // Serve up my chosen static files as well as my favicon.
 export default (app) => {
@@ -15,8 +16,10 @@ export default (app) => {
   app.use(express.static(browserPath));
 
   if (process.env.NODE_ENV === 'production') {
+    console.log('Shipping G-Zipped Files');
     app.use(expressStaticGzip(publicPath));
   } else {
+    console.log('Shipping Non-G-Zipped Files');
     app.use(express.static(publicPath));
   };
 

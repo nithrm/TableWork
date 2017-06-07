@@ -4,8 +4,8 @@
   "description": "A React, Redux front-end with Sessions, Websockets, SQL, and Authentication built into the backend.",
   "main": "app.js",
   "scripts": {
-    "start": "rm -rf public/ && webpack -w --env.production=false --define process.env.NODE_ENV='\"development\"' & nodemon --watch server -e js babelify.js",
-    "start:prod": "rm -rf public/ && webpack --env.production --define process.env.NODE_ENV='\"production\"' --progress --colors && nodemon --watch server -e js babelify.js",
+    "start": "rm -rf public/ && webpack -w --env.production=false --define process.env.NODE_ENV='\"development\"' & NODE_ENV='development' nodemon --watch server -e js babelify.js",
+    "start:prod": "rm -rf public/ && webpack --env.production --define process.env.NODE_ENV='\"production\"' --progress --colors && NODE_ENV='production' nodemon --watch server -e js babelify.js",
     "postinstall": "node ./post-install.js",
     "test": "jest"
   },

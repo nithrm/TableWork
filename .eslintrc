@@ -4,6 +4,7 @@
 		"semi": 0,
 		"linebreak-style": "off",
 		"comma-dangle": 0,
-		"quote-props": 0
+		"quote-props": 0,
+		"no-extraneous-dependencies": 0
 	}
 }
