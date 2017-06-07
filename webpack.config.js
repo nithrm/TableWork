@@ -1,6 +1,5 @@
-'use strict';
-
 const webpack = require('webpack');
+const CompressionPlugin = require('compression-webpack-plugin');
 
 module.exports = (env = {}) => {
   const isProduction = env.production === true;
@@ -14,6 +13,7 @@ module.exports = (env = {}) => {
 
   if (isProduction) {
     myPlugins.push(
+      new webpack.optimize.OccurrenceOrderPlugin(true),
       new webpack.optimize.UglifyJsPlugin({
         comments: true,
         sourceMap: true,
@@ -23,6 +23,13 @@ module.exports = (env = {}) => {
         exclude: [
           './public/vendor.bundle.js'
         ]
+      }),
+      new CompressionPlugin({
+        asset: '[path].gz[query]',
+        algorithm: 'gzip',
+        test: /\.js$|\.css$|\.html$/,
+        threshold: 0,
+        minRatio: 0
       })
     );
   };
