@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b3e42cd-7d8a-4105-863c-b60e90ad2156" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/browser/helpers/FakeData.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/browser/react/components/TheTable/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/browser/react/components/TheTable/styles/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/browser/redux/reducers/dataList-reducer/helpers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/browser/redux/reducers/dataList-reducer/index.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bundle.js.gz" afterPath="$PROJECT_DIR$/public/bundle.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bundle.js.map.gz" afterPath="$PROJECT_DIR$/public/bundle.js.map.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor.bundle.js.gz" afterPath="$PROJECT_DIR$/public/vendor.bundle.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor.bundle.js.map.gz" afterPath="$PROJECT_DIR$/public/vendor.bundle.js.map.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/browser/react/components/WelcomeDiv/index.js" afterPath="$PROJECT_DIR$/browser/react/components/WelcomeDiv/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/browser/redux/action-creators/index.js" afterPath="$PROJECT_DIR$/browser/redux/action-creators/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/browser/redux/constants/index.js" afterPath="$PROJECT_DIR$/browser/redux/constants/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/browser/redux/initialState.js" afterPath="$PROJECT_DIR$/browser/redux/initialState.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/browser/redux/reducers/allReducers.js" afterPath="$PROJECT_DIR$/browser/redux/reducers/allReducers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/browser/app.html" afterPath="$PROJECT_DIR$/browser/app.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,13 +27,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/browser/react/components/WelcomeDiv/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+                <marker date="1496944116000" expanded="true" signature="412:502" ph="{&quot;welcomeText&quot;: 'Covfefe'...}" />
+                <marker date="1496944116000" expanded="true" signature="528:628" ph="{&quot;welcomeText&quot;: PropTypes.string...}" />
               </folding>
             </state>
           </provider>
@@ -58,6 +46,26 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="initialState.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/browser/redux/initialState.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/browser/app.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -180,7 +188,6 @@
         <option value="$PROJECT_DIR$/nodemon.json" />
         <option value="$PROJECT_DIR$/browser/redux/store/index.js" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/browser/app.html" />
         <option value="$PROJECT_DIR$/.eslintrc" />
         <option value="$PROJECT_DIR$/server/configure/static.js" />
         <option value="$PROJECT_DIR$/secrets.js" />
@@ -195,6 +202,7 @@
         <option value="$PROJECT_DIR$/browser/redux/action-creators/index.js" />
         <option value="$PROJECT_DIR$/browser/redux/constants/index.js" />
         <option value="$PROJECT_DIR$/browser/react/components/WelcomeDiv/index.js" />
+        <option value="$PROJECT_DIR$/browser/app.html" />
       </list>
     </option>
   </component>
@@ -455,6 +463,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MemeMagic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MemeMagic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="browser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="favicon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -574,7 +600,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63359000" />
+    <option name="totallyTimeSpent" value="63392000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="999" height="900" extended-state="6" />
@@ -624,13 +650,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/browser/react/components/TheTable/styles/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/browser/react/components/InitialLoading/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -660,13 +679,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/browser/redux/reducers/dataList-reducer/helpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/browser/redux/reducers/dataList-reducer/helpers.js" />
     <entry file="file://$PROJECT_DIR$/browser/redux/reducers/welcome-reducer/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -710,13 +723,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/browser/redux/reducers/dataList-reducer/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="72" lean-forward="false" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/browser/redux/reducers/dataList-reducer/index.js" />
     <entry file="file://$PROJECT_DIR$/browser/react/containers/AppContainer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -807,17 +814,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/browser/app.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.eslintrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding>
+            <marker date="1496944116000" expanded="true" signature="0:156" ph="{&quot;extends&quot;: &quot;airbnb&quot;...}" />
+            <marker date="1496944116000" expanded="true" signature="34:154" ph="{&quot;semi&quot;: 0...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -839,7 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -875,14 +878,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/browser/helpers/FakeData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/browser/helpers/FakeData.js" />
     <entry file="file://$PROJECT_DIR$/es5app.js/babelify.js" />
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -898,7 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -909,14 +904,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/browser/react/components/TheTable/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="90" column="36" lean-forward="true" selection-start-line="90" selection-start-column="36" selection-end-line="90" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/browser/react/components/TheTable/index.js" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -929,14 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/browser/redux/initialState.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -987,11 +967,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/browser/react/components/WelcomeDiv/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+            <marker date="1496944116000" expanded="true" signature="412:502" ph="{&quot;welcomeText&quot;: 'Covfefe'...}" />
+            <marker date="1496944116000" expanded="true" signature="528:628" ph="{&quot;welcomeText&quot;: PropTypes.string...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browser/favicon/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browser/redux/initialState.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browser/app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
