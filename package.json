@@ -4,7 +4,8 @@
   "description": "A React, Redux front-end with Sessions, Websockets, SQL, and Authentication built into the backend.",
   "main": "app.js",
   "scripts": {
-    "start": "yarn cache clean && yarn && NODE_ENV='production' nodemon babelify.js && rm -rf public/ && webpack --env.production --define process.env.NODE_ENV='\"production\"' --progress"
+    "build": "rm -rf public/ && webpack --env.production --define process.env.NODE_ENV='\"production\"' --progress",
+    "start": "yarn cache clean && yarn && NODE_ENV='production' nodemon babelify.js"
   },
   "engines": {
     "node": ">=8.0.0"
