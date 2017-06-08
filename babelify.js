@@ -1,3 +1,3 @@
 // This enables babel in node.
-require('babel-register');
+require('babel-core/register');
 require('./app');
